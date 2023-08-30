@@ -1,39 +1,24 @@
-emp_id	ename	 salary     job_desc
-1	   hema  	50000	   HR
-use db1;
-drop table employee;
-create table employee(
-emp_id int primary key,
-ename varchar(20),
-salary int,
-job_desc varchar(20)
-);
-
-insert into employee values(1,"HEMA",50000,"HR");
-insert into employee values(2,"nandhini",60000,"manager");
-insert into employee values(3,"sis",50000,"ceo");
-insert into employee values(4,"avali",100000,"instructor");
-insert into employee values(5,"ria",50000,"teamlead");
-select * from employee;
-select * from employee
-where ename='fff';
-select salary from employee
-where ename='fff';
-select salary from employee
-where ename='fff' AND salary>100000;
-select * from employee where job_desc IN('HR','manager');
-select * from employee where job_desc NOT IN('HR','manager');
-SELECT * from employee where salary BETWEEN 20000 AND 60000;
-
-2	   nandhini	60000	   manager
-3	   sis	    50000	   ceo
-5	   riya	    50000	   team lead
- 	
-
-
-
-
-
-
+create database BooksDB;
+create table books(
+ book_title varchar(20),
+ author varchar(20),
+ genre varca=har(10),
+ publicactionyear int,
+ price float(6,2)
+ );
+insert into books values('harraypotter','J k Rolling','suspence',1997,888.00);
+insert into books values('mr and mrs','james','adventure',2000,7888.00);
+insert into books values('avathar','camaroal','adventure'2018,1888.00);
+insert into books values('love',adih roy','romantic',2000,1222.00); 
+ insert into books values('karnisangini','suhan','crime',2012,888.00);
+ insert into books values('100 days','ram','romantic',2015,700.00);
+ insert into books values('narniya','advert','adventure',1977,500.00);
+ insert into books values('my is aline','kanyya','si-fi,2020,1000.00);
+insert into books values('zootopiya','ramshettie','comedy',2021,1200.00);
+insert into books values('encantio','jane','suspense',2015,1000.00);
+insert into books values('tangles','rolling',suspense',2014,1200.00);
+ select * from books;
+ update books set price=50 where book_title='harrypotter';
+ deiete from books where book_title='love';
 
 
